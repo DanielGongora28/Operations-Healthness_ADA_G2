@@ -5,13 +5,13 @@ import cv2 ### para leer imagenes jpg
 from matplotlib import pyplot as plt ## para gráfciar imágnes
 import a_funciones as fn #### funciones personalizadas, carga de imágenes
 import joblib ### para descargar array
-
+    
 ############################################
 ##### ver ejemplo de imágenes cargadas ######
 #############################################
 
-img1=cv2.imread(r'C:\Users\PC\Desktop\Analitica 3\Ops\colon_image_sets\colon_aca\colonca4.jpeg')
-img2 = cv2.imread(r'C:\Users\PC\Desktop\Analitica 3\Ops\colon_image_sets\colon_n\colonn4.jpeg')
+img1=cv2.imread(r'C:\Users\juanm\Downloads\Operations-Healthness_ADA_G2-main\Operations-Healthness_ADA_G2-main\colon_image_sets\colon_n\colonn990.jpeg')
+img2 = cv2.imread(r'C:\Users\juanm\Downloads\Operations-Healthness_ADA_G2-main\Operations-Healthness_ADA_G2-main\colon_image_sets\colon_aca\colonca98.jpeg')
 
 
 ############################################
@@ -50,11 +50,11 @@ plt.show()
 
 width = 100 #tamaño para reescalar imágen
 num_classes = 2 #clases variable respuesta
-trainpath = 'data/train/'
-testpath = 'data/test/'
+trainpath = 'C:\\Users\\juanm\\Downloads\\Operations-Healthness_ADA_G2-main\\Operations-Healthness_ADA_G2-main\\colon_image_sets\\'
+#testpath = 'C:\\Users\\juanm\\Downloads\\Operations-Healthness_ADA_G2-main\\Operations-Healthness_ADA_G2-main\\colon_image_sets\\colon_n'
 
 x_train, y_train= fn.img2data(trainpath) #Run in train
-x_test, y_test = fn.img2data(testpath) #Run in test
+#x_test, y_test = fn.img2data(testpath) #Run in test
 
 
 #### convertir salidas a numpy array ####
